@@ -26,5 +26,5 @@ PHP currently connects to MariaDB servers using `mysql_native_password`, which r
 phpize
 ./configure --with-mysqlnd_ed25519
 make
-sudo make install
+make install
 

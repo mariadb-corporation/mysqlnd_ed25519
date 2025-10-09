@@ -1,12 +1,12 @@
 {
-  "name": "georg/mysqlnd_ed25519",
+  "name": "mariadb/mysqlnd_ed25519",
   "description": "MariaDB ed25519 authentication plugin for mysqlnd",
   "type": "php-ext",
   "license": "BSD-3-Clause",
   "authors": [
     {
       "name": "Georg Richter",
-      "email": "holzboote@gmail.com",
+      "email": "georg@mariadb.com",
       "role": "Maintainer"
     }
   ],
