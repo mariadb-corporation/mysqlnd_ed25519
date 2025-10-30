@@ -127,7 +127,7 @@ static struct st_mysqlnd_authentication_plugin mariadb_ed25519_auth_plugin = {
 		"auth_plugin_client_ed25519",
 		PHP_VERSION_ID,
 		PHP_MARIADB_AUTH_PLUGIN_VERSION,
-		"PHP License 3.01",
+		"3-clause BSD License",
 		"Georg Richter <georg@mariadb.com>",
 		{ NULL, NULL },
 		{ NULL },
