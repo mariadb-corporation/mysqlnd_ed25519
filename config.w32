@@ -6,6 +6,9 @@ if (PHP_MYSQLND_ED25519 != "no") {
         EXTENSION("mysqlnd_ed25519", "php_mysqlnd_ed25519.c", true)
         ADD_EXTENSION_DEP('mysqlnd_ed25519', 'mysqlnd');
         ADD_EXTENSION_DEP('mysqlnd_ed25519', 'sodium');
+        ADD_FLAG("LIBS_MYSQLND_ED25519", "libsodium.lib");
+        ADD_FLAG('LDFLAGS_MYSQLND_ED25519', '/LIBPATH:"..\\deps\\lib"');
+
     } else {
         WARNING("libsodium not found");
     }
