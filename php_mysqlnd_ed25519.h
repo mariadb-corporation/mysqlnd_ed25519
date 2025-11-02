@@ -15,7 +15,7 @@
 #ifndef PHP_MARIADB_ED25519_PLUGIN_H
 #define PHP_MARIADB_ED25519_PLUGIN_H
 
-#define PHP_MARIADB_AUTH_PLUGIN_VERSION "1.0.0"
+#define PHP_MARIADB_AUTH_PLUGIN_VERSION "1.0.1"
 
 extern zend_module_entry mysqlnd_ed25519_plugin_module_entry;
 #define phpext_mysqlnd_ed25519_plugin_ptr &mysqlnd_ed25519_plugin_module_entry
