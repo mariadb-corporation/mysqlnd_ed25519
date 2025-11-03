@@ -24,10 +24,14 @@ PHP currently connects to MariaDB servers using `mysql_native_password`, which r
 
 ### Normal installation
 
-`mysqlnd_ed25519` is usually built and installed automatically when installed through your system’s PHP extension packaging system.
+`mysqlnd_ed25519` is usually built and installed automatically when installed through PHP's pie installer.
 
-Note: When installed into PHP’s extension directory, `mysqlnd_ed25519` is loaded automatically by `mysqlnd`.
-You do not need to add `extension=mysqlnd_ed25519 to your php.ini.
+On Posix systems the pie installer also adds a configuration entry for the mysqlnd_ed25519 plugin. On Windows you need to enable the plugin
+in your php.init file:
+
+```
+extension=mysqlnd_ed25519
+```
 
 ### Building from source
 
