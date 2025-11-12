@@ -152,8 +152,14 @@ PHP_MSHUTDOWN_FUNCTION(mysqlnd_ed25519)
 	return SUCCESS;
 }
 
+static const zend_module_dep mysqlnd_ed25519_deps[] = {
+	ZEND_MOD_REQUIRED("mysqlnd")
+	ZEND_MOD_END
+};
+
 zend_module_entry mysqlnd_ed25519_module_entry = {
-	STANDARD_MODULE_HEADER,
+	STANDARD_MODULE_HEADER_EX, NULL,
+	mysqlnd_ed25519_deps,
 	"mysqlnd_ed25519",
 	NULL,
 	PHP_MINIT(mysqlnd_ed25519),
